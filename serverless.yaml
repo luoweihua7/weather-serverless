@@ -1,0 +1,22 @@
+app: weather
+component: scf
+inputs:
+  description: AccuWeather天气预报函数
+  eip: true
+  enableRoleAuth: true
+  events: []
+  handler: index.main_handler
+  memorySize: 128
+  name: weather
+  namespace: default
+  publicAccess: true
+  region: ap-guangzhou
+  role: SCF_QcsRole
+  runtime: Nodejs12.16
+  src: ./src
+  timeout: 15
+name: weather
+org: '1251739776'
+stage: release
+# When using this configuration file for deployment, make sure the file name is "serverless.yml".
+# For more information: https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md
